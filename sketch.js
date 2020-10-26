@@ -15,7 +15,7 @@ function setup() {
 engine=Engine.create();
 world=engine.world;
 ground= new Ground(600,600,2000,20);
-
+roof= new Ground(450,50,600,20);
 ball= new Ball(200,200,80,80);
 ball2= new Ball(300,200,80,80)
 ball3= new Ball(400,200,80,80)
@@ -38,6 +38,7 @@ function draw ()
   background("white");
   Engine.update(engine);
 ground.display();
+roof.display();
 
 ball.display();
 ball2.display();
